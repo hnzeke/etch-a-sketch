@@ -1,5 +1,6 @@
 let userInput = prompt('Enter # of rows and columns')
 const container = document.querySelector("#container");
+let mouseDown = false;
 
 for (let i = 1; i <= userInput; i++) { //Loop that creates columns and rows based on user input
     const row = document.createElement('div'); 
@@ -23,3 +24,18 @@ for (let i = 1; i <= userInput; i++) { //Loop that creates columns and rows base
 
 }
 
+const units = document.querySelectorAll('div.unit')
+
+units.forEach(unit => unit.addEventListener('mousedown', function () {
+    mouseDown = true;
+}));
+
+units.forEach(unit => unit.addEventListener('mouseup', function () {
+    mouseDown = false;
+}));
+
+units.forEach(unit => unit.addEventListener('mousemove', function () {
+    if (mouseDown === true) {
+        unit.style.backgroundColor = 'black';
+    }
+}));
