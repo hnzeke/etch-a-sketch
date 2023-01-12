@@ -15,7 +15,7 @@ body {
 
 .row {
     display: flex;
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid black;
     background-color: white;
     height: 100%;
     width: 100%;
@@ -23,7 +23,7 @@ body {
 
 .unit {
     background-color: white;
-    border-right: 2px solid green;
+    border-right: 2px solid black;
     height: 100%;
     width: 100%;
 }
