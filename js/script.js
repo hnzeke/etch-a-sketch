@@ -26,7 +26,7 @@ for (let i = 1; i <= userInput; i++) { //Loop that creates columns and rows base
 
 const units = document.querySelectorAll('div.unit')
 
-units.forEach(unit => unit.addEventListener('mousedown', function () {
+units.forEach(unit => unit.addEventListener('mousedown', function () { // The following blocks contribute to the "drawing" function
     mouseDown = true;
 }));
 
